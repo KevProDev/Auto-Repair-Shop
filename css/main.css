@@ -1,7 +1,7 @@
 /*--------------------------------------------------------
   1.0 Resets & Utility
 ----------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,700,700i");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -103,8 +103,7 @@ h3 {
 
 h5 {
   text-transform: uppercase;
-  letter-spacing: 1.25px;
-  font-size: 10px;
+  font-size: 2.5rem;
   line-height: 1.5rem; }
 
 h5 {
@@ -348,6 +347,11 @@ a {
     width: 14.6rem;
     padding: 1rem 0; } }
 
+.fa-clock {
+  font-size: 2.5rem;
+  display: inline-block;
+  font-weight: 400; }
+
 body {
   background-color: aquamarine; }
 
@@ -387,3 +391,53 @@ body {
     right: 15px; }
   .active {
     display: block; } }
+
+.hero {
+  background: url(./../img/slides02.jpg) no-repeat;
+  background-size: cover;
+  height: 461px;
+  z-index: 0;
+  position: relative; }
+
+.hero_details {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-auto-rows: 461px; }
+
+.hero_info {
+  background-color: rgba(7, 153, 244, 0.9);
+  color: #f8f9fa;
+  padding: 50px 0 0 50px;
+  margin-left: 50px;
+  font-size: 1.8rem; }
+
+.hero_info_container {
+  margin-bottom: 6rem; }
+
+.detail_headline {
+  padding-bottom: 10px; }
+
+.detail_headline_h5 {
+  display: inline-block;
+  font-weight: 500;
+  padding-left: 0px; }
+
+.line {
+  border-bottom: 3px solid #f8f9fa;
+  height: 10px;
+  display: block;
+  width: 210px; }
+
+.line-out {
+  border-bottom: 1px solid #f8f9fa;
+  display: block; }
+
+.detail_list ul {
+  text-align: right;
+  margin-top: 20px; }
+
+.detail_list li {
+  font-weight: 200;
+  padding-right: 30px;
+  margin-bottom: 5px;
+  font-size: 1.3rem; }
