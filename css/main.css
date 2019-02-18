@@ -63,13 +63,18 @@ img, svg {
   align-items: center;
   justify-content: space-between; }
 
+.center-out-all {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 @media screen and (max-width: 1000px) {
   .center-out {
     flex-direction: column; } }
 
 h1 {
   font-size: 5.2rem;
-  font-weight: 100; }
+  font-weight: 500; }
 
 @media (max-width: 1024px) {
   h1 {
@@ -313,9 +318,9 @@ a {
 
 .btn {
   letter-spacing: .192rem;
-  border: 2px solid;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  border-radius: 3px; }
 
 .btn--lg {
   padding: 1.5rem 0;
@@ -332,7 +337,7 @@ a {
   border: 2px solid #ca2932; }
 
 .btn--white {
-  border: 2px solid #fff; }
+  background: #fff; }
 
 .btn:not(:last-child) {
   margin-right: 1.8rem; }
@@ -348,9 +353,12 @@ a {
     padding: 1rem 0; } }
 
 .fa-clock {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   display: inline-block;
   font-weight: 400; }
+
+.fas {
+  font-size: 2.3rem; }
 
 body {
   background-color: aquamarine; }
@@ -395,14 +403,15 @@ body {
 .hero {
   background: url(./../img/slides02.jpg) no-repeat;
   background-size: cover;
-  height: 461px;
+  height: 521px;
   z-index: 0;
   position: relative; }
 
 .hero_details {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-auto-rows: 461px; }
+  grid-auto-rows: 521px;
+  background: rgba(0, 0, 0, 0.7); }
 
 .hero_info {
   background-color: rgba(7, 153, 244, 0.9);
@@ -415,18 +424,14 @@ body {
   margin-bottom: 6rem; }
 
 .detail_headline {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 3px solid #f8f9fa; }
 
 .detail_headline_h5 {
   display: inline-block;
   font-weight: 500;
   padding-left: 0px; }
-
-.line {
-  border-bottom: 3px solid #f8f9fa;
-  height: 10px;
-  display: block;
-  width: 210px; }
 
 .line-out {
   border-bottom: 1px solid #f8f9fa;
@@ -436,8 +441,20 @@ body {
   text-align: right;
   margin-top: 20px; }
 
-.detail_list li {
+.details_list_li {
   font-weight: 200;
   padding-right: 30px;
   margin-bottom: 5px;
   font-size: 1.3rem; }
+
+.direction {
+  font-weight: 500;
+  margin: 20px 0 auto auto;
+  display: block; }
+
+.number_display {
+  font-weight: 500;
+  font-size: 2.5rem; }
+
+.hero_headline {
+  color: #f8f9fa; }
