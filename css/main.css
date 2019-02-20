@@ -16,7 +16,10 @@ li {
 
 @media screen and (max-width: 1000px) {
   [class*="col-"] {
-    padding: 0rem; } }
+    padding: 0rem; }
+  .row {
+    margin-right: 0px;
+    margin-left: 0px; } }
 
 .narrow {
   width: 100%;
